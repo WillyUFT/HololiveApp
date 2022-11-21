@@ -1,0 +1,4 @@
+claro #ffcddd
+más oscuro #ea99d5
+oscuro #b762c1
+muy oscuro #8946a6

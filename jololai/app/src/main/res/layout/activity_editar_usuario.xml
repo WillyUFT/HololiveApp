@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".crud_usuarios.EditarUsuario">
+
+    <EditText
+        android:id="@+id/TextoUsuarioEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Usuario"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/TextoContraseñaEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextoUsuarioEd"
+        android:layout_marginTop="50dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/TextoReIngresarContraseñaED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextoContraseñaEd"
+        android:layout_marginTop="50dp"
+        android:hint="Re Ingresa La Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/BotonRegistrarseED"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextoReIngresarContraseñaED"
+        android:layout_marginTop="50dp"
+        android:text="Editar usuario" />
+
+
+</RelativeLayout>

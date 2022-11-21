@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jololai">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".ConexionFirebase"
+        android:allowBackup="true"
+        android:icon="@mipmap/icono_mumei"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Jololai">
+        <activity
+            android:name=".crud_conciertos.EditarConcierto"
+            android:exported="false" />
+        <activity
+            android:name=".crud_conciertos.VerConciertoInfo"
+            android:exported="false" />
+        <activity
+            android:name=".crud_conciertos.ListaDeConciertos"
+            android:exported="false" />
+        <activity
+            android:name=".pantallas.PantallaDeConciertos"
+            android:exported="false" />
+        <activity
+            android:name=".crud_conciertos.AgregarConcierto"
+            android:exported="false" />
+        <activity
+            android:name=".pantallas.PantallaReportes"
+            android:exported="false" />
+        <activity
+            android:name=".registros.ListaDeReproduccionVideos"
+            android:exported="false" />
+        <activity
+            android:name=".pantallas.PantallaPrincipalUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".pantallas.PantallaDeVideos"
+            android:exported="false" />
+        <activity
+            android:name=".crud_videos.VerVideoInfo"
+            android:exported="false" />
+        <activity
+            android:name=".crud_videos.ListaDeVideos"
+            android:exported="false" />
+        <activity
+            android:name=".crud_videos.EditarVideos"
+            android:exported="false" />
+        <activity
+            android:name=".crud_videos.AgregarVideos"
+            android:exported="false" />
+        <activity
+            android:name=".pantallas.PantallaDeStaffPass"
+            android:exported="false"
+            android:theme="@style/Theme.Jololai.NoActionBar" />
+        <activity
+            android:name=".crud_usuarios.IniciarSesion"
+            android:exported="false" />
+        <activity
+            android:name=".crud_usuarios.VerUsuarioInfo"
+            android:exported="false" />
+        <activity
+            android:name=".crud_usuarios.ListaDeUsuarios"
+            android:exported="false" />
+        <activity
+            android:name=".crud_usuarios.EditarUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".crud_usuarios.AgregarUsuario"
+            android:exported="false" />
+        <activity
+            android:name=".crud_canciones.EditarCanciones"
+            android:exported="false" />
+        <activity
+            android:name=".crud_canciones.VerCancionInfo"
+            android:exported="false" />
+        <activity
+            android:name=".crud_canciones.ListaDeCanciones"
+            android:exported="false" />
+        <activity
+            android:name=".pantallas.PantallaDeCanciones"
+            android:exported="false" />
+        <activity
+            android:name=".crud_canciones.AgregarCanciones"
+            android:exported="false" />
+        <activity
+            android:name=".pantallas.PantallaPrincipal"
+            android:exported="true"
+            android:theme="@style/Theme.Jololai.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".crud_idols.AgregarIdol"
+            android:exported="false" />
+        <activity
+            android:name=".pantallas.PantallaPrincipalStaff"
+            android:exported="true"
+            android:theme="@style/Theme.Jololai.NoActionBar" />
+        <activity
+            android:name=".crud_idols.ListaDeIdols"
+            android:exported="true" />
+        <activity
+            android:name=".registros.ListaDeComprasCanciones"
+            android:exported="true" />
+        <activity
+            android:name=".crud_idols.VerIdolInfo"
+            android:parentActivityName=".crud_idols.ListaDeIdols">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".crud_idols.ListaDeIdols" />
+        </activity>
+        <activity
+            android:name=".crud_idols.EditarIdol"
+            android:parentActivityName=".crud_idols.ListaDeIdols">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".crud_idols.ListaDeIdols" />
+        </activity>
+        <activity
+            android:name=".pantallas.PantallaDeIdols"
+            android:exported="true" />
+    </application>
+
+</manifest>

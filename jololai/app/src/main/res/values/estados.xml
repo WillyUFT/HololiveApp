@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name = "spinner_estados" >
+
+        <item>Estado</item>
+        <item>Activa</item>
+        <item>Retirada</item>
+
+
+    </string-array>
+
+
+
+
+</resources>

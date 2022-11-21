@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name = "spinner_generos">
+
+        <item>Géneros</item>
+        <item>Gaming</item>
+        <item>Karaoke</item>
+        <item>Just Chatting</item>
+        <item>3D video</item>
+        <item>3D live</item>
+        <item>Cover</item>
+        <item>Canción original</item>
+        <item>Short</item>
+        <item>Collab</item>
+        <item>Watchalong</item>
+
+    </string-array>
+
+</resources>

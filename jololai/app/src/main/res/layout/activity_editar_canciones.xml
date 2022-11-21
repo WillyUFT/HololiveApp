@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fondo"
+    tools:context=".crud_canciones.EditarCanciones">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="900dp">
+
+        <TextView
+            android:id="@+id/editarCancionTituloEd"
+            android:layout_width="409dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/honey_notes"
+            android:text="Editar canción!"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/NombreCancionEd"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Nombre de la canción"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editarCancionTituloEd" />
+
+        <Spinner
+            android:id="@+id/spinnerIdolCancionEd"
+            android:layout_width="368dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="spinner de la que cantó la canción"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/NombreCancionEd" />
+
+        <EditText
+            android:id="@+id/letraCancionEd"
+            android:layout_width="368dp"
+            android:layout_height="258dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:fontFamily="@font/monserrat_light"
+            android:hint="Letra de la canción"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCoverUOriginalEd" />
+
+        <Spinner
+            android:id="@+id/spinnerCoverUOriginalEd"
+            android:layout_width="368dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="Es un cover o una canción original"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerIdolCancionEd" />
+
+        <Button
+            android:id="@+id/botonEditarCancion"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:text="Editar canción"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subirFotoCancionEd" />
+
+        <Button
+            android:id="@+id/subirFotoCancionEd"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Subir imagen"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fotoCancionEd" />
+
+        <ImageView
+            android:id="@+id/fotoCancionEd"
+            android:layout_width="368dp"
+            android:layout_height="368dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/letraCancionEd"
+            app:srcCompat="@drawable/img_base" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

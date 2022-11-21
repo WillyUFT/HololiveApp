@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".crud_usuarios.AgregarUsuario">
+
+    <EditText
+        android:id="@+id/TextoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Usuario"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/TextoContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextoUsuario"
+        android:layout_marginTop="50dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/TextoReIngresarContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextoContraseña"
+        android:layout_marginTop="50dp"
+        android:hint="Re Ingresa La Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/BotonRegistrarse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextoReIngresarContraseña"
+        android:layout_marginTop="50dp"
+        android:text="Registrar" />
+
+    <Button
+        android:id="@+id/BotonIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BotonRegistrarse"
+        android:layout_marginTop="50dp"
+        android:text="Usuario existente" />
+
+
+
+</RelativeLayout>

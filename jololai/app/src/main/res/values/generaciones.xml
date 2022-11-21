@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinner_generaciones_null">
+        <item>Generación</item>
+    </string-array>
+
+    <string-array name = "spinner_generaciones_jp" >
+
+        <item>Generación</item>
+        <item>Generación 0</item>
+        <item>Generación 1</item>
+        <item>Generación 2</item>
+        <item>Generación 3</item>
+        <item>Hololive Gamers</item>
+        <item>Generación 4</item>
+        <item>Generación 5</item>
+        <item>Generación 6</item>
+        <item>Generación 7</item>
+        <item>Generación 8</item>
+        <item>Generación 9</item>
+        <item>Generación 10</item>
+        <item>Singer</item>
+
+    </string-array>
+
+    <string-array name = "spinner_generaciones_id_cn" >
+
+        <item>Generación</item>
+        <item>Generación 1</item>
+        <item>Generación 2</item>
+        <item>Generación 3</item>
+        <item>Generación 4</item>
+        <item>Generación 5</item>
+
+    </string-array>
+
+    <string-array name = "spinner_generaciones_en" >
+
+        <item>Generación</item>
+        <item>Generación 1</item>
+        <item>Generación 2</item>
+        <item>Generación 3</item>
+        <item>Generación 4</item>
+        <item>Generación 5</item>
+        <item>Generación 6</item>
+        <item>Singer</item>
+
+    </string-array>
+
+    <string-array name = "spinner_generaciones_st" >
+
+        <item>Generación</item>
+        <item>Hololive</item>
+        <item>Management</item>
+
+    </string-array>
+
+
+
+
+</resources>

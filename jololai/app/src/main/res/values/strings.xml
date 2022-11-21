@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HOLODEX</string>
+    <string name="hint_nombre">Nombre:</string>
+    <string name="hint_telefono">Telefono:</string>
+    <string name="hint_correo_electronico">Correo electronico:</string>
+    <string name="btn_guarda">Guardar registro</string>
+    <string name="menu_nuevo">Nuevo registro</string>
+    <string name="registrar_idol">REGISTRAR IDOL</string>
+    <string name="boton_para_agregar_otra_idol">boton para agregar otra idol</string>
+    <string name="tomita_uwu">Tomita UwU</string>
+    <string name="coso_donde_va_la_info">coso donde va la info</string>
+    <string name="ac_va_el_nombre">acá va el nombre</string>
+    <string name="title_activity_ver_canciones">VerCanciones</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+<string-array name = "spinner_promocional">
+
+    <item>Promocional o no?</item>
+    <item>Promocional</item>
+    <item>No promocional</item>
+
+
+</string-array>
+
+</resources>

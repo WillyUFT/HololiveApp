@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/fondo"
+    android:layout_height="match_parent"
+
+    android:id="@+id/scrollInfoIdol"
+    android:contentDescription="@string/coso_donde_va_la_info"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imagenIdolDetalle"
+            android:layout_width="392dp"
+            android:layout_height="366dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.014"
+            app:srcCompat="@drawable/img_base" />
+
+        <TextView
+            android:id="@+id/textoDetalleNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ac_va_el_nombre"
+            android:text="Nombre: "
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagenIdolDetalle" />
+
+        <TextView
+            android:id="@+id/textoDetalleIdolVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Nombre"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textoDetalleNombre"
+            app:layout_constraintTop_toBottomOf="@+id/imagenIdolDetalle" />
+
+        <TextView
+            android:id="@+id/textoDetalleNombreOriginal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ac_va_el_nombre"
+            android:text="Nombre original: "
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.009"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleNombre" />
+
+        <TextView
+            android:id="@+id/textoDetalleNombreOriginalVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Nombre original"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textoDetalleNombre"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleIdolVar" />
+
+        <TextView
+            android:id="@+id/textoDetalleEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ac_va_el_nombre"
+            android:text="Estado:"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleNombreOriginal" />
+
+        <TextView
+            android:id="@+id/textoDetalleEstadoVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Estado"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textoDetalleEstado"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleNombreOriginalVar" />
+
+        <TextView
+            android:id="@+id/textoDetalleUnidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ac_va_el_nombre"
+            android:text="Unidad:"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleEstado" />
+
+        <TextView
+            android:id="@+id/textoDetalleUnidadVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Unidad"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.995"
+            app:layout_constraintStart_toEndOf="@+id/textoDetalleUnidad"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleEstadoVar" />
+
+        <TextView
+            android:id="@+id/textoDetalleGeneracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ac_va_el_nombre"
+            android:text="Generación:"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleUnidad" />
+
+        <TextView
+            android:id="@+id/textoDetalleGeneracionVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Generación"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textoDetalleGeneracion"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleUnidadVar" />
+
+        <TextView
+            android:id="@+id/textoDetalleDebut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ac_va_el_nombre"
+            android:text="Fecha de debut:"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleGeneracion" />
+
+        <TextView
+            android:id="@+id/textoDetalleDebutVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Debut"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textoDetalleDebut"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleGeneracionVar" />
+
+        <TextView
+            android:id="@+id/textoDetalleNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ac_va_el_nombre"
+            android:text="Apodo:"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleDebut" />
+
+        <TextView
+            android:id="@+id/textoDetalleNicknameVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Apodo"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textoDetalleNickname"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleDebutVar" />
+
+        <TextView
+            android:id="@+id/textoDetalleCumple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ac_va_el_nombre"
+            android:text="Cumpleaños:"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleNickname" />
+
+        <TextView
+            android:id="@+id/textoDetalleCumpleVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Cumpleaños"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textoDetalleCumple"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleNicknameVar" />
+
+        <TextView
+            android:id="@+id/textoDetalleAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ac_va_el_nombre"
+            android:text="Altura:"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleCumple" />
+
+        <TextView
+            android:id="@+id/textoDetalleAlturaVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Altura"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textoDetalleAltura"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleCumpleVar" />
+
+        <TextView
+            android:id="@+id/textoDetalleDisenador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/ac_va_el_nombre"
+            android:text="Diseñador:"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleAltura" />
+
+        <TextView
+            android:id="@+id/textoDetalleDisenadorVar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Diseñador"
+            android:textAlignment="textEnd"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textoDetalleDisenador"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleAlturaVar" />
+
+        <TextView
+            android:id="@+id/textoDetalleBioVar"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="acá va el nombre"
+            android:text="Bio:"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoDetalleDisenador" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabEliminar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginTop="684dp"
+            android:layout_marginEnd="176dp"
+            android:clickable="true"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

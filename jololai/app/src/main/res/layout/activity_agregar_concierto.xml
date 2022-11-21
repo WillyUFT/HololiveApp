@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".crud_conciertos.AgregarConcierto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textoAgregarConcierto"
+            android:layout_width="409dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/honey_notes"
+            android:text="Agregar Concierto!"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/EditTextNombreConcierto"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Nombre del concierto"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoAgregarConcierto" />
+
+        <EditText
+            android:id="@+id/EditTextDuracionConcierto"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Duración del concierto"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextNombreConcierto" />
+
+        <Spinner
+            android:id="@+id/spinnerIdolConcierto"
+            android:layout_width="368dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="spinner de la que apareció en el video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextDuracionConcierto" />
+
+
+        <Button
+            android:id="@+id/botonAgregarConcierto"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="4dp"
+            android:text="Agregar concierto"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/botonCalendarioConcierto"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/textoConciertoFecha"
+            android:layout_width="340dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:hint="Fecha del concierto"
+            android:importantForAutofill="no"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textColor="#000000"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerIdolConcierto"
+            tools:ignore="TextContrastCheck" />
+
+
+        <Button
+            android:id="@+id/botonCalendarioConcierto"
+            android:layout_width="340dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="28dp"
+            android:text="Abrir calendario"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textoConciertoFecha" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

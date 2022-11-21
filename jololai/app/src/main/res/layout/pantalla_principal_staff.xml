@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".pantallas.PantallaPrincipalStaff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/verHistorialCompraCanciones"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/compra_canciones"
+                android:contentDescription="boton para ver el menu de usuarios"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verPantallaCanciones" />
+
+            <ImageButton
+                android:id="@+id/verPantallaIdols"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/menu_idols"
+                android:contentDescription="boton para ver el menu de idols"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageButton
+                android:id="@+id/verPantallaCanciones"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/canciones"
+                android:contentDescription="boton para ver el menu de idols"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verPantallaUsuarios"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageButton
+                android:id="@+id/verPantallaUsuarios"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="28dp"
+                android:background="@drawable/usuarios"
+                android:contentDescription="boton para ver el menu de usuarios"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/verHistorialVideos"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rep_videos"
+                android:contentDescription="boton para ver el menu de idols"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verPantallaVideoStaff"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <ImageButton
+                android:id="@+id/verConciertos"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/pantalla_conciertos"
+                android:contentDescription="boton para ver el menu de idols"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verHistorialVideos"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Button
+                android:id="@+id/BotonReportes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="48dp"
+                android:text="Reportes"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verHistorialCompraCanciones" />
+
+            <Button
+                android:id="@+id/botonCarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="28dp"
+                android:text="Carga incial"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/BotonReportes" />
+
+            <ImageButton
+                android:id="@+id/verPantallaVideoStaff"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/pantalla_videos"
+                android:contentDescription="boton para ver el menu de usuarios"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verPantallaIdols" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

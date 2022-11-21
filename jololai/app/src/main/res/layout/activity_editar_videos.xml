@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fondo"
+    tools:context=".crud_videos.EditarVideos">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="900dp">
+
+        <TextView
+            android:id="@+id/editarVideoTituloEd"
+            android:layout_width="409dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/honey_notes"
+            android:text="Agregar video!"
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/EditTextNombreVideoEd"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Nombre del video"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editarVideoTituloEd" />
+
+        <EditText
+            android:id="@+id/EditTextLinkVideoEd"
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="8dp"
+            android:ems="10"
+            android:hint="Link del video"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColorHint="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextNombreVideoEd" />
+
+        <Spinner
+            android:id="@+id/spinnerPromocionalVideoEd"
+            android:layout_width="368dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="spinner de la que cantó la canción"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.518"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerIdolVideoEd" />
+
+        <Spinner
+            android:id="@+id/spinnerIdolVideoEd"
+            android:layout_width="368dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="spinner de la que apareció en el video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EditTextLinkVideoEd" />
+
+        <Spinner
+            android:id="@+id/spinnerGeneroVideoEd"
+            android:layout_width="368dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:contentDescription="Es un cover o una canción original"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.511"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerPromocionalVideoEd" />
+
+        <Button
+            android:id="@+id/botonAgregarVideoEd"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:text="Editar video"
+            android:textColor="#000000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subirFotoVideoEd"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/subirFotoVideoEd"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Subir imagen"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fotoVideoEd" />
+
+        <ImageView
+            android:id="@+id/fotoVideoEd"
+            android:layout_width="368dp"
+            android:layout_height="368dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerGeneroVideoEd"
+            app:srcCompat="@drawable/img_base" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

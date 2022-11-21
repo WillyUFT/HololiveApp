@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "643837377713",
+    "firebase_url": "https://hololive-ae2a7-default-rtdb.firebaseio.com",
+    "project_id": "hololive-ae2a7",
+    "storage_bucket": "hololive-ae2a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643837377713:android:df2de9ac267dd6bcb0b690",
+        "android_client_info": {
+          "package_name": "com.example.jololai"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643837377713-sc04vdd8a10o2qeact05kcja557ijbs4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jololai",
+            "certificate_hash": "4cfef5b89a8c4d159b915a4382fda9291d1985da"
+          }
+        },
+        {
+          "client_id": "643837377713-58g1d36be7euufk75c9ueo9uv665vc14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1aqCtrAvgVgYz81IR1g0OKOuTIUw96qU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "643837377713-58g1d36be7euufk75c9ueo9uv665vc14.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

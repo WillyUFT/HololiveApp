@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    tools:context=".crud_usuarios.VerUsuarioInfo">
+
+
+    <TextView
+        android:id="@+id/NombreUsuarioVer"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/honey_notes"
+        android:text="Nombre de Usuario"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/textViewComprasRealizadas"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/honey_notes"
+        android:text="Compras realizadas ↓"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/AquaCompras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NombreUsuarioVer"
+        app:layout_constraintVertical_bias="0.873" />
+
+    <ImageView
+        android:id="@+id/AquaCompras"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:background="@drawable/compras_realizadas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewComprasNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#E91E63"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/AquaCompras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/AquaCompras"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <Button
+        android:id="@+id/botonEliminarUsuario"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/AquaCompras"
+        app:layout_constraintEnd_toStartOf="@+id/AquaCompras"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AquaCompras" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/fondo"
+    tools:context=".crud_usuarios.IniciarSesion">
+
+    <EditText
+        android:id="@+id/TextoInicioUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Usuario"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/TextoInicioContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextoInicioUsuario"
+        android:layout_marginTop="50dp"
+        android:hint="Contraseña"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/botonIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:layout_marginTop = "50dp"
+        android:layout_below = "@id/TextoInicioContraseña"/>
+
+</RelativeLayout>
